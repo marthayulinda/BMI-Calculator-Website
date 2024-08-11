@@ -1,0 +1,193 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #ffffff;
+}
+/* Navigasi */
+nav {
+  background: rgba(255, 1, 1, 0.3);
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column; /* Memastikan header dan menu berada di bawah satu sama lain */
+  align-items: center; /* Memusatkan header dan menu secara horizontal */
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%; /* Memastikan header mengambil seluruh lebar nav */
+  margin-bottom: 10px; /* Jarak antara header dan menu navigasi */
+}
+
+.logo-icon {
+  background-image: url("../assets/bmi2.png");
+  height: 40px;
+  width: 40px;
+  background-size: cover;
+  background-position: center;
+  margin-right: 10px; /* Jarak antara ikon dan judul */
+}
+
+.main-title {
+  font-size: 1.5em;
+  color: #000000;
+  text-align: center;
+}
+
+/* Menu Navigasi */
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  margin-left: 20px;
+}
+
+ul li a {
+  color: #000000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+ul li a:hover {
+  text-decoration: underline;
+}
+
+main {
+  display: flex;
+}
+form {
+  padding: 12px;
+  background-color: aliceblue;
+}
+
+aside {
+  padding: 48px;
+}
+.button,
+.button-reset,
+.button-tengah {
+  height: 38px;
+  background-color: rgb(104, 188, 214);
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: auto;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.button {
+  background-color: rgb(104, 188, 214);
+}
+.button-reset {
+  background-color: rgb(230, 103, 61);
+}
+.button-tengah {
+  margin-top: 20px;
+  margin-bottom: 16px;
+}
+.form-button {
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+input[type="number"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: monospace;
+  font-size: 14px;
+}
+/* Gaya khusus untuk input radio */
+input[type="radio"] {
+  width: auto;
+  margin-right: 8px; /* Jarak kecil antara radio button dan labelnya */
+  cursor: pointer;
+}
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+
+.footer-section {
+  flex: 1;
+}
+
+.footer-section h4 {
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+
+.footer-section p,
+.footer-section a {
+  margin: 5px 0;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  border-top: 1px solid #444;
+  padding-top: 10px;
+}
+
+.footer-bottom p {
+  margin: 0;
+  text-align: center;
+}
+
+.footer-section a img {
+  width: 24px;
+  height: 24px;
+  margin: 0 5px;
+}
+label[for="isi"] {
+  font-weight: bold;
+}
+.list ol {
+  padding-left: 0;
+  margin-left: 0;
+  list-style-position: inside;
+}
+p {
+  text-align: justify;
+}
+.hasil,
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Memusatkan elemen secara horizontal */
+  padding: 12px;
+  background-color: aliceblue;
+}
+
+.list-tak-bernomor {
+  list-style-type: none; /* Menghilangkan bullet points */
+  padding: 0; /* Menghapus padding default dari <ul> */
+  margin: 0; /* Menghapus margin default dari <ul> */
+  text-align: center;
+}
+
+.list-tak-bernomor li {
+  margin-bottom: 8px; /* Opsional: Menambahkan jarak antara item list */
+}
