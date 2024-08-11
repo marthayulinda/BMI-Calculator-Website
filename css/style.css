@@ -1,5 +1,5 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
   background: #ffffff;
 }
 /* Navigasi */
@@ -36,7 +36,7 @@ header {
 }
 
 /* Menu Navigasi */
-ul {
+nav ul {
   list-style: none;
   display: flex;
   justify-content: center;
@@ -44,17 +44,17 @@ ul {
   margin: 0;
 }
 
-ul li {
+nav ul li {
   margin-left: 20px;
 }
 
-ul li a {
+nav ul li a {
   color: #000000;
   text-decoration: none;
   font-weight: bold;
 }
 
-ul li a:hover {
+nav ul li a:hover {
   text-decoration: underline;
 }
 
@@ -190,4 +190,78 @@ p {
 
 .list-tak-bernomor li {
   margin-bottom: 8px; /* Opsional: Menambahkan jarak antara item list */
+} /* Gaya default untuk ul yang tidak berada di navigasi atau tidak memiliki kelas list-tak-bernomor */
+/* Gaya default untuk ul yang tidak berada di navigasi atau tidak memiliki kelas list-tak-bernomor */
+ul {
+  list-style: disc; /* Menampilkan bullet points jika diperlukan */
+  padding-left: 40px; /* Padding default untuk bullet points */
+  margin: 0; /* Menghapus margin default dari <ul> */
+}
+.error-message {
+  color: red;
+  font-size: 0.875em;
+  margin-top: 0.25em;
+  display: block;
+}
+/* Media Queries */
+@media (max-width: 768px) {
+  main {
+    flex-direction: column; /* Mengubah dari baris ke kolom pada layar kecil */
+  }
+
+  aside {
+    padding: 20px;
+  }
+
+  .form-button {
+    flex-direction: column; /* Menyusun tombol menjadi kolom */
+  }
+
+  .button,
+  .button-reset,
+  .button-tengah {
+    width: 100%; /* Tombol penuh pada layar kecil */
+    margin-bottom: 10px;
+  }
+
+  input[type="number"] {
+    width: 100%; /* Input penuh pada layar kecil */
+    margin-bottom: 10px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-title {
+    font-size: 1.2em;
+  }
+
+  ul {
+    font-size: 0.9em;
+  }
+
+  .form-button {
+    width: 100%;
+  }
+}
+
+/* Untuk layar besar */
+@media (min-width: 769px) {
+  main {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  aside {
+    width: 45%;
+  }
+
+  .hasil,
+  .contact {
+    width: 100%;
+  }
 }

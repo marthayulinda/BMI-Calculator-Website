@@ -4,8 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BMI Calculator</title>
+    <link rel="icon" href="assets\bmi.png" type="image/png">
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="js/script.js" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
   </head>
 
   <body>      
@@ -15,7 +17,7 @@
         <h1 class="main-title">Kalkulator BMI</h1>
     </header>
       <ul>
-        <li><a href="#home">Home</a></li>
+        <!-- <li><a href="#home">Home</a></li> -->
         <li><a href="#calculator">Kalkulator</a></li>
         <li><a href="#features">Fitur</a></li>
         <li><a href="#contact">Kontak</a></li>
@@ -36,35 +38,40 @@
         </article>
 
       <!-- form -->
-        <form id="bmiForm">
-          <div>
+      <form id="bmiForm">
+        <div>
             <label for="isi">Jenis Kelamin </label><br><br/>
-            <input type="radio" id="jk" name="jk" value="pria" />
-            <label for="pria">Pria</label>
-            <input type="radio" id="jk" name="jk" value="wanita" />
-            <label for="wanita">Wanita</label>
-          </div>
-          <br><br/>
-          <div>
+            <input type="radio" id="jk_pria" name="jk" value="pria" />
+            <label for="jk_pria">Pria</label>
+            <input type="radio" id="jk_wanita" name="jk" value="wanita" />
+            <label for="jk_wanita">Wanita</label>
+            <span class="error-message" id="jk-error"></span>
+        </div>
+        <br/><br/>
+        <div>
             <label for="isi">Berat Badan (kg) </label><br>
             <input type="number" id="weight" name="weight"></input>
-          </div> 
-        
-          <div>
+            <span class="error-message" id="weight-error"></span>
+        </div>
+        <br/>
+        <div>
             <label for="isi">Usia (tahun)</label><br>
-            <input type="number" id="age" name="age" ></input>
-          </div>  
-          
-          <div>
+            <input type="number" id="age" name="age"></input>
+            <span class="error-message" id="age-error"></span>
+        </div>  
+        <br/>
+        <div>
             <label for="isi">Tinggi Badan (cm) </label><br>
-            <input type="number" id="height" name="height" ></input>
-          </div>
-          <br/>
-          <div class="form-button">
+            <input type="number" id="height" name="height"></input>
+            <span class="error-message" id="height-error"></span>
+        </div>
+        <br/>
+        <div class="form-button">
             <button class="button" type="submit">Hitung BMI</button>  
-            <button class="button-reset">Reset</button>
-          </div>
-        </form>
+            <button type="reset" class="button-reset">Reset</button>
+        </div>
+    </form>
+    
 
         <article id="features">
           <div>
@@ -104,18 +111,18 @@
           </div>
           
           <p>
-            Lorem ipsum 
-          </p>
-          
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
-            consequuntur praesentium optio in eum nemo.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
-            consequuntur praesentium optio in eum nemo.
-          </p>
-
+            <p id="summary1">
+              
+            </p>
+            
+            <p id="summary2">
+             
+            </p>
+            
+            <p id="summary3">
+             
+            </p>
+            <hr/>
           <p>
             BMI tidak sepenuhnya mewakili diagnosis menyeluruh dari kesehatan 
             tubuh dan resiko penyakit seseorang. Anda perlu konsultasi lebih 
@@ -132,8 +139,8 @@
               <li>Osteoarthritis</li>
             </ul>
             <div class="form-button">
-              <button class="button">Konsultasi Dokter Via Aplikasi</button>  
-              <button class="button">Registrasi Online Sekarang</button>
+              <button class="button" id="consultButton">Konsultasi Dokter Via Aplikasi</button>
+              <button class="button" id="registerButton">Registrasi Online Sekarang</button>
             </div>
           </div>
         </section>
@@ -152,9 +159,15 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2024 Kalkulator BMI. All rights reserved.</p>
+        <p>&copy; 2024 Kalkulator BMI.</p><br>
+         <p>All rights reserved.</p><br>
+         <p>"Be afraid that You didn't try" </p>
+          <p>~One Ok Rock, Wasted Nights~</p><br>
+          <p>(❁´◡`❁)</p>
       </div>
     
     </footer>
+    <script src="js/script.js"></script>
+    <script src="js/bmi.js"></script>
   </body>
 </html>
